@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+构造函数,<br>和真正的 构造函数
+<script>
+//    function Person(name,age){//构造函数
+//        this.name = name;
+//        this.age = age;
+//    }
+//    Person.prototype.showName = function(){
+//        return this.name;
+//    };
+//    var p1 = new Person('abc',12)
+//    alert(p1.showName())
+
+    //真正的构造函数
+    'use strict';
+    class Person{
+        constructor(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        showName(){
+            return this.name
+        }
+    }
+    var p1 = new Person('abc','456');
+    alert(p1.showName())
+</script>
+
+</body>
+</html>
